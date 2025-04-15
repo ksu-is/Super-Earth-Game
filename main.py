@@ -11,11 +11,15 @@ def first_choice():
     choice = input("What do you do? (1/2): ")
     if choice == '1':
         print("\nThe galactic fighter ignores your words. 'Prepare, human!' It flies at you with incredible speeds. Get ready to fight!")
-        start_combat("Mysterious Figure")
+        start_combat("Mysterious Alien Warrior")
     elif choice == '2':
-        start_combat("Mysterious Figure")
+        start_combat("Mysterious Alien Warrior")
     else:
         print("Invalid choice. Please try again.")
         first_choice()
+
+def start_combat(enemy_name):
+    player_hp = 100
+    enemy_hp = 100
 
 start_game()
